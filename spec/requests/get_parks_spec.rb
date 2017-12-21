@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "get all parks route", :type => :request do
-  let!(:parks) { FactoryGirl.create_list(:park, 20)}
+  let!(:parks) { FactoryBot.create_list(:park, 20)}
 
   before { get '/parks'}
 
